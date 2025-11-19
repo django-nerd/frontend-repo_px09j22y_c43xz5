@@ -9,13 +9,13 @@ function Hero({ onPrimaryClick, onSecondaryClick }) {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(1200px_600px_at_80%_-10%,rgba(56,189,248,0.22),transparent_60%)]" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(900px_450px_at_-10%_20%,rgba(139,92,246,0.22),transparent_60%)]" />
 
-      {/* 3D Spline object as subtle background */}
-      <div className="absolute inset-0 -z-10 opacity-70">
+      {/* 3D Spline object as background (more visible) */}
+      <div className="absolute inset-0 -z-10 opacity-90">
         <Spline scene="https://prod.spline.design/FduaNp3csZktbOi3/scene.splinecode" style={{ width: '100%', height: '100%' }} />
       </div>
 
-      {/* Scrim for readability over 3D */}
-      <div className="absolute inset-0 -z-0 bg-gradient-to-b from-slate-950/40 via-slate-950/40 to-slate-950/60" />
+      {/* Scrim for readability over 3D (slightly lighter) */}
+      <div className="absolute inset-0 -z-0 bg-gradient-to-b from-slate-950/25 via-slate-950/25 to-slate-950/40" />
 
       {/* Content centered */}
       <div className="relative z-10 max-w-4xl mx-auto w-full px-6 py-24">
